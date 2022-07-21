@@ -24,7 +24,7 @@ read -p "do you want docker compose? [y]es or no" ASKING
 
 if [ $ASKING = "no" or $ASKING = "n"]
 then
-    exit
+    exit;;
 else
     sudo curl -L "https://github.com/docker/compose/releases/download/1.29.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
     sudo chmod +x /usr/local/bin/docker-compose
